@@ -62,7 +62,7 @@ h6 {
   text-wrap: balance;
 }
 
-/* Colors and Typography */
+/* Colors and typography */
 :root {
   --purple50: hsl(260 100% 95%);
   --purple300: hsl(264 82% 80%);
@@ -75,6 +75,8 @@ h6 {
   --grey500: hsl(217 19% 35%);
   --dark-blue: hsl(219 29% 14%);
   --black: hsl(0 0% 7%);
+
+  --bg-body: hsl(300 5% 96%);
 }
 
 @font-face {
@@ -91,9 +93,33 @@ h6 {
   src: url(./fonts/BarlowSemiCondensed-SemiBold-subset.woff2) format(woff2);
 }
 
+/* General styles and layout */
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
   font-size: 0.8125rem; /* 0.8125rem => 0.8125 * 16px = 13px */
   line-height: 1.4;
+  color: var(--grey400);
+  background-color: var(--bg-body);
+  min-height: 100dvh;
+}
+
+main {
+  flex-grow: 1;
+  padding: 40px 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
