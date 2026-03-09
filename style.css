@@ -76,3 +76,24 @@ h6 {
   --dark-blue: hsl(219 29% 14%);
   --black: hsl(0 0% 7%);
 }
+
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-weight: 500;
+  font-display: swap;
+  src: url(./fonts/BarlowSemiCondensed-Medium-subset.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-weight: 600;
+  font-display: swap;
+  src: url(./fonts/BarlowSemiCondensed-SemiBold-subset.woff2) format(woff2);
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem; /* 0.8125rem => 0.8125 * 16px = 13px */
+  line-height: 1.4;
+}
