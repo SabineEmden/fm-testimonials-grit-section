@@ -81,14 +81,14 @@ h6 {
 
 @font-face {
   font-family: "Barlow Semi Condensed";
-  font-weight: 500;
+  font-weight: 500; /* Medium */
   font-display: swap;
   src: url(./fonts/BarlowSemiCondensed-Medium-subset.woff2) format(woff2);
 }
 
 @font-face {
   font-family: "Barlow Semi Condensed";
-  font-weight: 600;
+  font-weight: 600; /* Semibold */
   font-display: swap;
   src: url(./fonts/BarlowSemiCondensed-SemiBold-subset.woff2) format(woff2);
 }
@@ -122,6 +122,82 @@ main {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+/* Testimonials */
+.testimonials-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--txt-clr-2);
+  background-color: var(--bgr-clr);
+  border-radius: 0.5rem;
+  box-shadow: 40px 60px 50px -47px var(--grey500);
+  padding: 2rem;
+}
+
+.daniel {
+  --txt-clr-1: var(--white); /* name,  highlight*/
+  --txt-clr-2: var(--purple50); /* status, quote */
+  --bgr-clr: var(--purple500); /* background */
+  --img-clr: var(--purple300); /* image border */
+}
+
+.jonathan {
+  --txt-clr-1: var(--white);
+  --txt-clr-2: var(--grey100);
+  --bgr-clr: var(--grey500);
+}
+
+.jeanette,
+.kira {
+  --txt-clr-1: var(--grey500);
+  --txt-clr-2: var(--grey400);
+  --bgr-clr: var(--white);
+}
+
+.patrick {
+  --txt-clr-1: var(--grey200);
+  --txt-clr-2: var(--grey100);
+  --bgr-clr: var(--dark-blue);
+  --img-clr: var(--purple500);
+}
+
+.testimonial__header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.testimonial__avatar {
+  border-radius: 50%;
+  height: 2.5em;
+}
+.avatar--border {
+  border: 0.125rem solid var(--img-clr);
+}
+
+.testimonial__name {
+  font-size: 0.8125rem; /* 0.8125rem => 0.8125 * 16px = 13px */
+  color: var(--txt-clr-1);
+}
+
+.testimonial__status {
+  font-size: 0.6875rem; /* 0.6875rem => 0.6875 * 16px = 11px */
+  margin-top: 0.25rem;
+}
+
+.testimonial__highlight {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--txt-clr-1);
 }
 
 /* Footer */
