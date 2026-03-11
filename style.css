@@ -108,6 +108,7 @@ body {
 
 main {
   flex-grow: 1;
+  display: flex;
   padding: 2.5rem 2rem;
   align-items: center;
   justify-content: center;
@@ -128,6 +129,7 @@ main {
 .testimonials-grid {
   display: grid;
   gap: 2rem;
+  max-width: 40rem;
 }
 
 .testimonial {
@@ -200,7 +202,7 @@ main {
   color: var(--txt-clr-1);
 }
 
-@media (min-width: 32rem) {
+@media (min-width: 33rem) {
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -215,6 +217,18 @@ main {
 
   .kira {
     grid-column: span 2;
+  }
+}
+
+@media (min-width: 62rem) {
+  .testimonials-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 70rem;
+  }
+
+  .kira {
+    grid-column: 4;
+    grid-row: 1 / 3;
   }
 }
 
