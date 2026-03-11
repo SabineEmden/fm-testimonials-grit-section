@@ -209,6 +209,9 @@ main {
 
   .daniel {
     grid-column: span 2;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: min(23.5rem, 90%) top;
   }
 
   .patrick {
