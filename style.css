@@ -200,6 +200,24 @@ main {
   color: var(--txt-clr-1);
 }
 
+@media (min-width: 32rem) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .daniel {
+    grid-column: span 2;
+  }
+
+  .patrick {
+    grid-column: span 2;
+  }
+
+  .kira {
+    grid-column: span 2;
+  }
+}
+
 /* Footer */
 .attribution {
   font-size: 0.6875rem; /* 0.6875rem => 0.6875 * 16px = 11px */
