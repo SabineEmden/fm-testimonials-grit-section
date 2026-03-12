@@ -133,6 +133,11 @@ main {
 }
 
 .testimonial {
+  /* default custom property values provide a safe baseline */
+  --txt-clr-1: var(--grey500);
+  --txt-clr-2: var(--grey400);
+  --bgr-clr: var(--white);
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -154,13 +159,6 @@ main {
   --txt-clr-1: var(--white);
   --txt-clr-2: var(--grey100);
   --bgr-clr: var(--grey500);
-}
-
-.jeanette,
-.kira {
-  --txt-clr-1: var(--grey500);
-  --txt-clr-2: var(--grey400);
-  --bgr-clr: var(--white);
 }
 
 .patrick {
