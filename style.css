@@ -139,7 +139,7 @@ main {
   color: var(--txt-clr-2);
   background-color: var(--bgr-clr);
   border-radius: 0.5rem;
-  box-shadow: 40px 60px 50px -47px var(--grey500);
+  box-shadow: 2.5rem 3.75rem 3.125rem -3rem var(--grey500);
   padding: 2rem;
 }
 
