@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor solution](https://your-solution-url.com)
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-48qxfjVrkF)
 - [Live site](https://sabineemden.github.io/fm-testimonials-grit-section/)
 
 ## My process
